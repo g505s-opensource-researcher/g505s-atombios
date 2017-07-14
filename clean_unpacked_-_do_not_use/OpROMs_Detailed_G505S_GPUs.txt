@@ -1,0 +1,84 @@
+[01]
+8DFAE5D4-B50E-4C10-96E6-F2C266CACBB6 (VID=1002, DID=9901)
+for Trinity [Radeon HD 7660D] - integrated GPU found at A10-5800K desktop APU
+
+*** IMPORTANT NOTE 1 :
+
+This OpROM could be used for HD 8650G integrated GPU of A10-5750M laptop APU,
+which has "(VID=1002, DID=990b)" identifiers and found at G505S laptop,
+but ONLY after the proprietary UEFI/BIOS patches it to correct "DID" and
+fills a lot of its' variables / data structures with compatible values.
+
+If you will try to use it AS-IS unpatched - your backlight will not work.
+Get the good working Video BIOS ROMs from g505s-atombios repository!
+
+=== 01 OpROM human readable ASCII header:
+IBMS 761295520 01/16/13,13:48:38
+113-DVST-113.DVST.PCI_EXPRESS.DDR3
+113-DVST-113 DVST DDR3 200e/
+(C) 1988-2010, Advanced Micro Devices, Inc.
+ATOMBIOSBK-AMD VER015.031.000.000.000000.TrinityGener.865166.1.252756
+AMD_Generic\config.h
+
+@@@ Suitable for A10-5750M integrated HD 8650G GPU, filename:  pci1002,990b.rom
+
+[06]
+F215D0AE-4ABA-4886-8EF2-9C59F2F69B1D (VID=1002, DID=6663)
+1st, for Sun PRO [Radeon HD 8570A; HD 8570M] -
+- discrete GPU found at laptops (MXM module HD 8570A; HD 8570M)
+
+*** IMPORTANT NOTE 2 :
+
+This OpROM could be used for HD 8570M discrete GPU
+which has "(VID=1002, DID=6663)" identifiers and found at G505S laptop,
+but ONLY after the proprietary UEFI/BIOS patches it and
+fills a lot of its' variables / data structures with compatible values.
+
+If you will try to use it AS-IS unpatched - you may encounter the bugs.
+Get the good working Video BIOS ROMs from g505s-atombios repository!
+
+=== 06 OpROM human readable ASCII header:
+IBM` 761295520 06/24/13,02:40:33
+BR44464.011.SUN.PCI_EXPRESS.DDR3
+Lenovo G405s/G505s SUN-Pro DDR3 PX/Richland
+(C) 1988-2010, Advanced Micro Devices, Inc.
+ATOMBIOSBK-AMD VER015.032.000.000.044464.BR44464.011 .884561  .264908
+COMPAL_LENOVO_SUN_PRO_G405S_DDR3_RICHLAND\config.h
+
+@@@ Suitable for G505S with HD 8570M discrete GPU, filename:   pci1002,6663.rom
+
+[08]
+ADE8E3F5-6A26-411B-AE49-4DCCEEA1E4BA (VID=1002, DID=6663)
+2nd, for Sun PRO [Radeon HD 8570A; HD 8570M] -
+- discrete GPU found at laptops (MXM module HD 8570A; HD 8570M)
+
+*** IMPORTANT NOTE 3 :
+
+It seems that "(VID=1002, DID=6663)" (which is from Sun PRO family) is a BIOS
+mistake, because OpROM human readable ASCII header - printed below - tells that
+this OpROM is for Jet GPU family (R5 M230, R5 M255, R5 M420, R5 M430, R7 M435)
+
+Judging by their list and the availability of GPUs at the modifications of
+G405s/G505s laptop models, most likely it should be "(VID=1002, DID=6665)" -
+- which stands for R5 M230 discrete GPU found in certain G405s/G505s versions
+
+^^^ UPDATE :
+
+This OpROM could be used for R5 M230 discrete GPU
+which has "(VID=1002, DID=6665)" identifiers and found at G505S laptop,
+but ONLY after the proprietary UEFI/BIOS patches it to correct "DID" and
+fills a lot of its' variables / data structures with compatible values.
+
+If you will try to use it AS-IS unpatched - you may encounter the bugs.
+Get the good working Video BIOS ROMs from g505s-atombios repository!
+
+=== 08 OpROM human readable ASCII header:
+IBM‚ 761295520 11/28/13,01:19:25
+BR45149.002.JET.PCI_EXPRESS.DDR3
+Lenovo G405s/G505s Jet DDR3 PX/Richland
+(C) 1988-2010, Advanced Micro Devices, Inc.
+ATOMBIOSBK-AMD VER015.041.000.000.045149.BR45149.002 .981492  .279018
+COMPAL_LENOVO_JET_G405S_DDR3_RICHLAND\config.h
+
+@@@ Suitable for G505S with R5 M230 discrete GPU, filename:    pci1002,6665.rom
+
